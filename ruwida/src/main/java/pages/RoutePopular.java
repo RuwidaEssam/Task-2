@@ -10,8 +10,8 @@ public class RoutePopular {
     public RoutePopular(WebDriver W){
         this.w =W;
     }
-    By from_CHIKKAMAGALURU_to_BENGALURU= By.xpath("//*[@id=\"routeSlider\"]/div/div[2]/div/div/ul/li[1]/a");
-    //By from_CHIKKAMAGALURU_to_BENGALURU= By.xpath("//*[@onclick=\"populateSearch('1467469338690', 'Chikkamagaluru', '1467467616730', 'Bengaluru');\"]");
+
+    By from_CHIKKAMAGALURU_to_BENGALURU= By.xpath("//*[@onclick=\"populateSearch('1467469338690', 'Chikkamagaluru', '1467467616730', 'Bengaluru');\"]");
     By turn_right= By.xpath("//*[@id=\"routeSlider\"]/div/a[2]");
     public void Enter_turn_right() {
         w.findElement(turn_right).click();

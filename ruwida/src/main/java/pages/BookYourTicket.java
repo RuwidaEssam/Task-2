@@ -12,7 +12,7 @@ public class BookYourTicket {
     }
     By arrival_date  = By.xpath("//*[@id=\"txtJourneyDate\"]");
     By turn_right  = By.xpath("//*[@id=\"ui-datepicker-div\"]/div/a[2]");
-    By choose_day  = By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[3]/td[4]");
+    By choose_day  = By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[2]/td[6]");
     By Search_for_bus  = By.xpath("//*[@id=\"bookingsForm\"]/div[1]/div/div[2]/div[3]/button");
     public void Enter_day(){
         w.findElement(turn_right).click();
@@ -24,5 +24,7 @@ public class BookYourTicket {
     public void Enter_button_search_for_Bus() {
         w.findElement(Search_for_bus).click();
     }
+
+
 
 }
